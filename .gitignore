@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+server/database/*.db
+server/database/*.db-journal
+server/database/*.db-shm
+server/database/*.db-wal
+*.before-theme.bak
