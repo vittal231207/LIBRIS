@@ -1,10 +1,43 @@
+
+# Dependencies
 node_modules/
+**/node_modules/
+
+# Build output
 dist/
+**/dist/
+build/
+
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
+
+# Local SQLite database and temporary files
 server/database/*.db
 server/database/*.db-journal
 server/database/*.db-shm
 server/database/*.db-wal
+
+# Local backup files
 *.before-theme.bak
+
+# Logs and diagnostic files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+report.*.*.*.*.json
+
+# Caches and coverage
+.cache/
+.parcel-cache/
+.nyc_output/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Editor and operating-system files
+.DS_Store
+.vscode/
